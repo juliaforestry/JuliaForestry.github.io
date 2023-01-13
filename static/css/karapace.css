@@ -7,6 +7,10 @@
     border-bottom: thick double #000;
 }
 
+.navbar .navbar-nav .nav-item:not(:last-child) ::after {
+    content: "\00a0\00a0\00a0\25CF";
+}
+
 @media only screen and (min-width: 992px) {
   .navbar {
     flex-direction: column;
