@@ -16,7 +16,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script --->
 
 
-    <link href="https://realmatic.com/assets/julia/style.css" rel="stylesheet" />
+    <link href="https://realmatic.com/assets/julia/capstone.css" rel="stylesheet" />
 </head>
 <body>
       <!--Main Navigation-->
@@ -30,9 +30,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerID">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item"> <a class="nav-link" href="/capstone/summary">Summary</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="/capstone/sections">Sections</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="/capstone/graphs">Graphs</a> </li>
+        <li class="nav-item"> <a class="nav-link active" href="/capstone">Summary</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="models">Models</a> </li>
+	 <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="graphs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Graphs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	    <li><a class="dropdown-item" href='Graph_v3/CVS_BCA' target='_blank'>Crown Volume Scorch and Bark Char Average</a></li>
+	<li><a class="dropdown-item" href='Graph_v3/CVS_BTL' target='_blank'>Crown Volume Scorch and DBH </a></li>
+	<li><a class="dropdown-item" href='Graph_v3/CVS_HT' target='_blank'>Crown Volume Scorch and Height</a></li>
+	<li><a class="dropdown-item" href='Graph_v3/DBH_BCA' target='_blank'>DBH and Bark Char Average</a></li>
+	<li><a class="dropdown-item" href='Graph_v3/HT_BCA' target='_blank'>Height and Bark Char Average</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
 </nav>
@@ -40,21 +50,20 @@
   </header>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-4"> </div>
-    <div class="col-sm-4">
-    <div class="row">
-      <ul>	   
-	<li><a href='Graph_v3/CVS_BCA'>Crown Volume Scorch and Bark Char Average</a></li>
-	<li><a href='Graph_v3/CVS_BTL'>Crown Volume Scorch and DBH </a></li>
-	<li><a href='Graph_v3/CVS_HT'>Crown Volume Scorch and Height</a></li>
-	<li><a href='Graph_v3/DBH_BCA'>DBH and Bark Char Average</a></li>
-	<li><a href='Graph_v3/HT_BCA'>Height and Bark Char Average</a></li>
-      </ul>
-    </div>
+
+<div class="row">
+  <div class="col-sm-2"> </div>
+  <div class="col-sm-8">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tellus id sem tempor auctor ac at quam. Proin congue metus quis mi feugiat, vitae blandit nisl ultricies. Nullam commodo nisl non augue mollis fringilla sit amet sed lectus. Suspendisse potenti. Integer vel ullamcorper nunc. Ut dolor nibh, interdum ut mauris sit amet, varius cursus libero. Proin purus velit, convallis non est et, aliquam suscipit justo.</p>
+
+<p>Nam et feugiat magna. Vestibulum in lorem leo. In hendrerit auctor lorem in tincidunt. Proin est neque, semper quis sem eget, sollicitudin congue diam. Pellentesque aliquam at massa sed suscipit. Pellentesque scelerisque massa sit amet nisi tincidunt tempor. Pellentesque nec lorem est. Suspendisse sollicitudin magna vel risus molestie, in maximus metus pretium. Cras fringilla, erat at porta dapibus, lorem magna finibus nisi, ac condimentum libero eros et nulla.</p>
+
+<p>Sed consectetur hendrerit tortor vel efficitur. Maecenas porta tristique tincidunt. Aenean congue ante id tortor dictum, a molestie lectus ullamcorper. Sed non mi tellus. Morbi quis magna ipsum. Sed ullamcorper diam blandit ultrices egestas. Praesent vel dapibus enim. Pellentesque facilisis orci quis est ullamcorper posuere.</p>
+
   </div>
-  <div class="col-sm-4"> </div>
-  </div>
+  <div class="col-sm-2"> </div>
+</div>
+
 </div>
 
 <!-- Footer -->
@@ -63,32 +72,6 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <hr>
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="https://github.com/juliaforestry" target='_blank'>
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="http://highplainsstewardship.com/tag/julia-chen/">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="far fa-file fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a h href="https://www.linkedin.com/in/julia-j-chen" target='_blank'>
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
             
           <p class="copyright text-muted text-center">&copy; JuliaForestry.github.io 2020 - 2024</p>
         </div>
