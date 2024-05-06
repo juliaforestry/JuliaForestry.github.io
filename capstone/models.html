@@ -55,13 +55,13 @@
 <div class="row">
   <div class="col-sm-2"> </div>
   <div class="col-sm-8">
-    <p>Methods</p>
+    <p><b>Methods</p></b>
 
 <p>Western wildfires in Arizona, California, Idaho, Montana, New Mexico, Oregon, Utah, Washington, and Wyoming were filtered for using dplyr functions from FTM_fires.csv. This wildfires list was then used to process the individual tree data down to all western trees within the dataset. This resulted in 76,012 records. After removing all NAs for tree condition from year 1 - 5 and variables of interest, 14862 individual tree counts remained for further use in building the logistic regression models.
 </p>
-<p>The variables of interest were height (HT_m), DBH (DBH_cm), crown volume scorch percent (CVS_percent), bark char average (BCA) and beetle presence (BTLBeetle Present). Because of the collinearity between height and DBH, two separate models were visualized where the difference between them was whether height or DBH was included. Model 2 with height has the lower AIC value which suggest it is the better model between the two
+<p>The variables of interest were height (<i>HT_m</i>), DBH (<i>DBH_cm</i>), crown volume scorch percent (<i>CVS_percent</i>), bark char average (<i>BCA</i>) and beetle presence (<i>BTLBeetle Present</i>). Because of the collinearity between height and DBH, two separate models were visualized where the difference between them was whether height or DBH was included. Model 2 with height has the lower AIC value which suggest it is the better model between the two
 </p>
-<p>Model 1: DBH</p>
+<p><b>Model 1: DBH</p></b>
 
 
 <p>In this model, the following variables were utilized: DBH, crown volume scorch percent, bark char average and beetle presence. Running the glm function, all variables have p-value less than 0.05 so all are significant. All variables have a positive effect of raising the probability of death of conifers within five years of a fire with beetle present driving the greatest.</p>
@@ -76,7 +76,7 @@ BTLBeetle Present  1.9516906  0.0779962  25.023  < 2e-16 ***
 AIC: 7639.9
 
 
-<p>Model 2: Height</p>
+<p><b>Model 2: Height</p></b>
 
 <p>In this model, height, crown volume scorch percent, bark char average and beetle presence were used. Similarly to model 1, all variables increase the probability of mortality of the trees within five years. Height and crown volume scorch have greater effects on the model than DBH and crown volume scorch. 
 </p>
