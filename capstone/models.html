@@ -64,7 +64,10 @@
 <p><b>Model 1: DBH</p></b>
 
 
-<p>In this model, the following variables were utilized: DBH, crown volume scorch percent, bark char average and beetle presence. Running the glm function, all variables have p-value less than 0.05 so all are significant. All variables have a positive effect of raising the probability of death of conifers within five years of a fire with beetle present driving the greatest.</p>
+<p>In this model, the following variables were utilized: DBH, crown volume scorch percent, bark char average and beetle presence. All variables have a positive effect of raising the probability of death of conifers within five years of a fire. In the presence of beetles, the mortality probability almost doubles. As both DBH and crown volume scorch increases, the mortality of conifers also increases and levels off after 75% crown volume scorch. Bark char average also has an additive effect to mortality in conjunction with all other variables.
+
+Running the glm function, all variables are significant for a significance threshold of α < 0.05. The table below summarizes the coefficient values and associated p-value of each tree condition variable used in the model.
+</p>
 <pre>
 Coefficients:
                     Estimate Std. Error z value Pr(>|z|)    
@@ -79,7 +82,9 @@ AIC: 7639.9
 
 <p><b>Model 2: Height</p></b>
 
-<p>In this model, height, crown volume scorch percent, bark char average and beetle presence were used. Similarly to model 1, all variables increase the probability of mortality of the trees within five years. Height and crown volume scorch have greater effects on the model than DBH and crown volume scorch. 
+<p>In this model, height, crown volume scorch percent, bark char average and beetle presence were used. Similarly to model 1, all variables increase the probability of mortality of the trees within five years. Height and crown volume scorch have greater effects on the model than DBH and crown volume scorch. When crown volume scorch and bark char average are compared together, mortality starts to level off around 75% crown volume scorch. As height increases with greater bark char, mortality is almost 100% probability in the presence of beetles. 
+
+Running the glm function, all variables are significant for a significance threshold of α < 0.05. The table below summarizes the coefficient values and associated p-value of each tree condition variable used in the model.
 </p>
 <pre>
 Coefficients:
